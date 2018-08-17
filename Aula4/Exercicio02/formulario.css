@@ -1,0 +1,95 @@
+
+h1{
+    width: 386px;
+    height: 24px;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.67;
+    letter-spacing: 0.2px;
+    color: #9b9b9b;
+    -webkit-text-stroke: 1px #979797;
+}
+
+label {
+    width: 43px;
+    height: 19px;
+    font-family: "Open-Sans";
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+  }
+
+  input[type=text], input[type=date], select {
+    width: 336px;
+    height: 39px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #b9b9b9;
+  }
+
+  textarea {
+      width: 336px;
+      height: 101px;
+  }
+
+  .Selected-Radio {
+    width: 18px;
+    height: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #359be0;
+  }
+
+  .Checkbox-Titulo {
+    width: 104px;
+    height: 19px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+  }
+
+  .Container {
+    width: 165px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 2.5px #4eb6ff;
+  }
+
+  button {
+    width: 165px;
+    height: 44px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;    
+    border-radius: 100px;
+  }
+
+  .button-cancelar{
+    color: #009dff;
+    border: solid 2.5px #4eb6ff;
+    background-color: white;
+  }
+
+  .button-salvar{
+    background-color: #13cb65;
+    color: white;
+    /* box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5); */
+    
+  }

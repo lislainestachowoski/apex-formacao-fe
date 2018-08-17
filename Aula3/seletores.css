@@ -1,0 +1,70 @@
+*{
+    font-family: 'Trebuchet MS';
+}
+
+/* Seletor por tag */
+/* p {
+    font-family: 'Trebuchet MS';
+} */
+
+/* Seletor descendente */
+p .aula{
+    color: red;
+    font-weight: 900;
+}
+
+/* Seletor por classe */
+.aula{
+    color: blue;
+}
+
+/* Seletor por id */
+#dados-label{
+ font-weight: 900;
+}
+
+/* Pseudo Seletor */
+p:hover, fieldset:hover{
+    background-color: beige;
+    font-size: 13pt;
+}
+
+p::first-letter{
+    font-weight: 900;
+    font-size: 24pt;
+}
+
+/* Seletor de atributo */
+p[name]{
+    color: blue;
+}
+
+p[name=title]{
+    color: green;
+}
+
+/* Mesma ideia do like do sql */
+/* Contenha "impar" em qualquer lugar */
+p[name~=impar]{
+    color: gold;
+}
+
+/* Contenha "par" em qualquer lugar SEPARADO POR HÍFEN */
+p[name|=par]{
+    color:silver;
+}
+
+.texto::first-line{
+    color: crimson;
+}
+
+/* Filho direto do container que seja "label" */
+.container>label{
+    border: 2px solid red;
+    margin: 10px;
+}
+
+/* Atinge o irmão do label (nesse caso o h4) */
+.container .sub-container label + h4{
+    color: chartreuse;
+}
