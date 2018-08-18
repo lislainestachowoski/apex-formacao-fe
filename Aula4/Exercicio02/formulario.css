@@ -1,5 +1,30 @@
+/* FLEXBOX */
 
-h1{
+form {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 10px 0px;
+}
+
+h1 {
     width: 386px;
     height: 24px;
     font-family: "Open Sans";
@@ -16,57 +41,43 @@ h1{
 label {
     width: 43px;
     height: 19px;
-    font-family: "Open-Sans";
+    font-family: "Open Sans";
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    color: #9b9b9b;
+  }
+
+  span{
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
     color: #9b9b9b;
   }
 
   input[type=text], input[type=date], select {
-    width: 336px;
     height: 39px;
     border-radius: 4px;
     background-color: #ffffff;
     border: solid 1px #b9b9b9;
+    font-family: "Open Sans";
+  }
+  
+  input[type=radio]{
+    width: auto;
+    font-family: "Open Sans";
   }
 
   textarea {
-      width: 336px;
+      width: 100%;
       height: 101px;
+      border-radius: 4px;
+      font-family: "Open Sans";
   }
-
-  .Selected-Radio {
-    width: 18px;
-    height: 16px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: #ffffff;
-    border: solid 1px #359be0;
-  }
-
-  .Checkbox-Titulo {
-    width: 104px;
-    height: 19px;
-    font-family: OpenSans;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #9b9b9b;
-  }
-
-  .Container {
-    width: 165px;
-    height: 44px;
-    border-radius: 100px;
-    border: solid 2.5px #4eb6ff;
-  }
-
+  
   button {
     width: 165px;
     height: 44px;
@@ -79,6 +90,7 @@ label {
     letter-spacing: normal;
     text-align: center;    
     border-radius: 100px;
+    cursor: pointer;
   }
 
   .button-cancelar{
@@ -90,6 +102,11 @@ label {
   .button-salvar{
     background-color: #13cb65;
     color: white;
-    /* box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5); */
-    
+    border: 0px;
+  }
+
+  .buttons_deck{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
