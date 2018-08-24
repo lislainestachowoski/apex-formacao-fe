@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício Aula 06</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h2>Cadastro de Veículos</h2>
+    </div>
+    
+    <div class="content">         
+        <form>
+            <div class="header-group">
+                <i class="material-icons">drive_eta</i>
+                <h4>Dados do Veículo</h4>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="input-group">
+                <label for="placa">Placa</label>
+                <input class="placa" type="text" data-inputmask="'mask': 'AAA-9999'" required maxlength="8">
+            </div>
+
+            <div class="input-group">
+                <label for="renavam">Renavam</label>
+                <input type="text" style="width: 200px" required maxlength="10">
+            </div>
+
+            <div class="input-group">
+                <label for="estado">Estado</label>
+                <select style="width: 200px">
+                    <option value="Santa Catarina" label="Santa Catarina"></option>
+                    <option value="Rio Grande do Sul" label="Rio Grande do Sul"></option>
+                    <option value="Paraná" label="Paraná"></option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" style="width: 200px" required>
+            </div>
+
+            <div class="input-group">
+                <label for="marca">Marca</label>
+                <input type="text" style="width: 200px" maxlength="50" required>
+            </div>
+
+            <div class="input-group">
+                <label for="modelo">Modelo</label>
+                <input type="text" style="width: 200px" maxlength="50" required>
+            </div>
+
+            <div class="input-group">
+                <label for="ano">Ano</label>
+                <input type="number" style="width: 200px" minlength="4" maxlength="4" required>
+            </div>
+
+            <div class="input-group">
+                <label for="ano fabricacao">Ano fabricação</label>
+                <input type="number" style="width: 200px" minlength="4" maxlength="4" required>
+            </div>
+
+            <div class="input-group">
+                <label for="qtd eixos">Quantidade eixos</label>
+                <input type="number" style="width: 200px" minlength="1" maxlength="4" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tipo">Tipo</label>
+                <select style="width: 200px">
+                    <option value="Moto" label="Moto"></option>
+                    <option value="Leve" label="Leve"></option>
+                    <option value="Utilitário" label="Utilitário"></option>
+                    <option value="Pesado" label="Pesado"></option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="cilindradas">Cilindradas</label>
+                <input type="text" style="width: 200px" minlength="1" maxlength="6" required>
+            </div>
+
+            <div class="input-group">                
+            </div>
+
+            <!-- DADOS DO PROPRIETARIO -->
+            <div class="header-group">
+                <i class="material-icons">account_circle</i>
+                <h4>Dados do Proprietário</h4>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="input-group-2">
+                <label for="nome">Nome</label>
+                <input type="text" style="width: 300px" minlength="5" maxlength="100" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" style="width: 300px" minlength="1" maxlength="6" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="cpf">CPF (somente números)</label>
+                <input type="text" style="width: 300px" data-inputmask="'mask': '999.999.999-99'" minlength="14" maxlength="14" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="rg">RG (somente números)</label>
+                <input type="text" style="width: 300px" minlength="5" maxlength="15" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="rua">Rua</label>
+                <input type="text" style="width: 300px" minlength="5" maxlength="100" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="numero">Número</label>
+                <input type="text" style="width: 100px" minlength="1" maxlength="50" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="bairro">Bairro</label>
+                <input type="text" style="width: 300px" minlength="1" maxlength="150" required>
+            </div>
+
+            <div class="input-group-2">
+                <label for="estado">Estado</label>
+                <select style="width: 300px">
+                    <option value="Santa Catarina" label="Santa Catarina"></option>
+                    <option value="Rio Grande do Sul" label="Rio Grande do Sul"></option>
+                    <option value="Paraná" label="Paraná"></option>
+                </select>
+            </div>
+
+            <div class="input-group-2">
+                <label for="cidade">Cidade</label>
+                <input type="text" style="width: 300px" minlength="1" maxlength="150" required>
+            </div>
+
+            <div class="input-group-2">
+            </div>
+
+            <div class="buttons_deck">
+                    
+                <button>
+                    <i class="material-icons">control_point</i>
+                    <span>Novo</span>
+                </button>
+
+                <button>
+                    <i class="material-icons">save</i>
+                    <span>Salvar</span>
+                </button>
+                
+                <button>
+                    <i class="material-icons">remove_circle</i>
+                    <span>Excluir</span>
+                </button>
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function init(){
+            $(":input").inputmask();
+        };
+        init();
+    </script>
+</body>
+</htm>

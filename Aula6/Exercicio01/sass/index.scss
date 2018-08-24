@@ -1,0 +1,141 @@
+$Font-color: #4c4848;
+$Font-family: Verdana, Geneva, Tahoma, sans-serif;
+$Font-color-button: #171780;
+
+form {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &.form-50{
+        width: 50%;
+    }
+
+    h2{
+        color: $Font-color;
+        margin-bottom: 0px;
+      }
+    
+    h4{
+        margin: 1px 0px;
+        color: $Font-color;
+        margin-top: 150px;
+        }
+
+    label {
+        font-size: 12px;
+        font-family: $Font-family;
+        color: $Font-color;
+    }
+
+    input, select {
+        border-radius: 4px;
+        background-color: white;
+        border: solid 1px silver;
+        height: 22px;
+        font-family: $Font-family;
+        font-size: 13px;            
+        }
+
+        select {
+            height: 26px;
+        }
+        
+        .placa{
+            width: 100px;
+        }
+
+        .label-grid{
+            text-align: center;
+        }
+    }   
+
+    button{    
+        display: flex;
+        width: 115px;
+        height: 37px;
+        font-family: $Font-family;
+        font-size: 13px;
+        font-weight: 800;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px groove  #a59898;
+        justify-content: center;
+        flex-direction: center;
+        align-items: center;
+        color:$Font-color-button;
+        background-color: transparent;
+        margin-left: 10px;
+    }
+    
+    button:first-child{
+        margin-left: 0px;
+    }
+    
+    .buttons_deck{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    } 
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: $Font-family;
+
+    .header-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $Font-color;
+    }
+    
+    .header-group
+    {
+        h4, .material-icons{
+              margin-top: 10px;
+          }
+        
+          .material-icons-proprietario{
+            margin-top: 20px;
+          }
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        margin: 4px 0px;       
+    }
+    
+    .input-group-2 {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: 4px 0px;
+    }
+
+    .col-25{
+        width: 25%;
+    }
+
+    .col-50{
+        width: 50%;
+    }
+
+    .line{
+        width: 90%;
+        height: 2px;
+        background-color:#cec7c7;
+    }
+}
+
